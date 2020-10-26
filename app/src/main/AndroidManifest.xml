@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"/>
-        <activity android:name=".LunchList">
+        <activity android:name=".LunchList_Lab7">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
