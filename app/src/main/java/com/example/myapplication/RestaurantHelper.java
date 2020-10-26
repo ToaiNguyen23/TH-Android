@@ -19,13 +19,16 @@ public class RestaurantHelper extends SQLiteOpenHelper {
     public RestaurantHelper(Context context, String name,
                             SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
-// TODO Auto-generated constructor stub
+
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL("CREATE TABLE restaurants (_id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, address TEXT, type TEXT);");
+
     }
+
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
@@ -41,6 +44,7 @@ public class RestaurantHelper extends SQLiteOpenHelper {
 
         getWritableDatabase().insert("restaurants", "name", cv);
     }
+
 
     public Cursor getAll()
     {

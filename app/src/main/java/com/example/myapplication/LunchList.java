@@ -64,7 +64,7 @@ public class LunchList extends Activity {
             }
             listResraurant.add(r);
             String msg;
-            msg = r.getName().toString() + r.getAddress().toString() + r.getType().toString();
+            msg = r.getName().toString()+ " " + r.getAddress().toString()+ " "+ r.getType().toString();
 
             Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
 
@@ -89,7 +89,7 @@ public class LunchList extends Activity {
 
         @Override
         public View getView(int position,  View convertView,  ViewGroup parent) {
-            /*return super.getView(position, convertView, parent);*/
+
             View row = convertView;
 
             if( row == null)

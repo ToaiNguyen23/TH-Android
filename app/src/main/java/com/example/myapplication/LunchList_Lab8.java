@@ -29,7 +29,7 @@ public class LunchList_Lab8 extends TabActivity {
 
     Cursor curRestaurant = null;
     RestaurantAdapter adapter = null;
-    
+
     RestaurantHelper helper;
 
     @Override
@@ -100,11 +100,9 @@ public class LunchList_Lab8 extends TabActivity {
                     r.setType("Delivery");
                     break;
             }
-            String result = "You choose: ";
+            String result = " ";
             result += r.getName() +" "+ r.getAddress() + " " + r.getType();
-            Toast.makeText( LunchList_Lab8.this
-                    , result , Toast.LENGTH_SHORT).show();
-
+            Toast.makeText( LunchList_Lab8.this, result , Toast.LENGTH_SHORT).show();
 
             helper.insert(r.getName(), r.getAddress(), r.getType());
 
